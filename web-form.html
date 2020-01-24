@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="survey-form">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <style media="screen">
+    #title {
+      margin-bottom: 0;
+    }
+    #description {
+      margin-top: 0;
+    }
+    .entire_thing {
+      width: 500px;
+      background-color: #dddddd;
+      padding: 50px 75px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .body {
+      background-color: white;
+      font-family: Arial, Helvetica;
+    }
+    #full-name {
+      width: 100%;
+      height: 35px;
+      border: 0;
+      background-color: #f2f2f2;
+    }
+    #email {
+      width: 100%;
+      height: 35px;
+      border: 0;
+      background-color: #f2f2f2;
+    }
+    #cities {
+      width: 100%
+      height: 35px;
+      min-width: 500px;
+      border: none;
+      margin-bottom: 7px;
+      background-color: #f2f2f2;
+    }
+    #fav {
+      width: 100%
+      height: 35px;
+      min-width: 500px;
+      border: none;
+      margin-bottom: 7px;
+      background-color: #f2f2f2;
+    }
+    .xtra_space {
+      padding-bottom: 5px;
+    }
+    #suggestions {
+      border: 0;
+      background-color: #f2f2f2;
+    }
+    .recommend {
+      border: none;
+    }
+    .mar {
+      margin-bottom: 7px;
+    }
+    .button {
+      background-color: #45b6fe;
+      color: white;
+      border: none;
+      text-align: center;
+      font-size: 15px;
+      padding: 12px 45px 12px 45px;
+      margin: 20px 0 0 5px;
+      border-radius: 20px;
+    }
+    </style>
+  </head>
+  <div class="entire_thing">
+    <body class="body">
+      <div>
+        <h1 class="title" id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform.</p> <br>
+      </div>
+      <div class="">
+        <form class="" action="index.html" method="post">
+          <div class="nadage">
+            <div class="xtra_space">Full Name</div> <input type="text" name="full-name" id="full-name"><br> <br>
+            <div class="xtra_space">Email Address</div> <input type="email" name="email" id="email"><br> <br>
+            <div class="xtra_space">Age (optional)</div> <input type="number" name="age" id="email"><br> <br>
+          </div>
+          <div><p class="mar">Which option best describes your current place of residence?</p></div>
+          <div>
+            <select id="cities" name="cities">
+              <option value="blank"></option>
+              <option value="Lehi">Lehi</option>
+              <option value="American Fork">American Fork</option>
+              <option value="Eagle Mountain">Eagle Mountain</option>
+              <option value="Sarotoga Springs">Sarotoga Springs</option>
+              <option value="Lindon">Lindon</option>
+              <option value="Pleasant Grove">Pleasant Grove</option>
+              <option value="Orem">Orem</option>
+              <option value="Provo">Provo</option>
+            </select>
+          </div>
+          <div class="">
+            <p class="mar">Would you recommend Utah County to a friend as a place to live?</p>
+            <div class="recommend">
+              <input type="radio" value="definitely"> Definitely <br>
+              <input type="radio" value="maybe"> Maybe <br>
+              <input type="radio" value="not sure"> Not Sure <br>
+            </div>
+          </div>
+          <div class="">
+            <p class="mar">Select your favorite feature of your city?</p>
+            <div class="">
+              <select id="fav" name="Favorite feature">
+                <option value="blank"></option>
+                <option value="Community">Community</option>
+                <option value="Churches">Churches</option>
+                <option value="Shopping Centers">Shopping Centers</option>
+                <option value="Schools">Schools</option>
+                <option value="Parks">Parks</option>
+                <option value="Movie Theaters">Movie Theaters</option>
+              </select>
+            </div>
+          </div>
+          <div class="">
+            <p class="mar">What would you like to see improved?</p>
+            <div id="improvement">
+              <input type="checkbox" value="family homes"> Cheaper single family homes <br>
+              <input type="checkbox" value="park"> Park with pavilion for neighborhoods <br>
+              <input type="checkbox" value="traffic flow"> Better traffic flow <br>
+              <input type="checkbox" value="shopping mall"> Shopping mall <br>
+              <input type="checkbox" value="apartments"> High Density Apartments <br>
+            </div>
+          </div>
+          <div class="">
+            <p class="mar">Any comments or suggestions?</p>
+            <div>
+              <textarea id="suggestions" rows="4" cols="75"></textarea>
+            </div>
+          </div>
+          <button type="button" name="button" class="button">Submit</button>
+        </form>
+      </div>
+    </body>
+  </div>
+</html>
